@@ -6,6 +6,5 @@ class advertising
         require_once(realpath('View/Action_adv.php'));
     }
 }
-$advertising = new advertising();
-$advertising -> action();
+(new advertising)->action();
 ?>

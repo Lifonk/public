@@ -6,6 +6,5 @@ class shop
         require_once(realpath('View/Action_shop.php'));
     }
 }
-$shop = new shop();
-$shop -> action();
+(new shop)->action();
 ?>

@@ -6,6 +6,5 @@ class cart
         require_once(realpath('View/Action_cart.php'));
     }
 }
-$cart= new cart();
-$cart -> action();
+(new cart)->action();
 ?>
