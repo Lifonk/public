@@ -1,5 +1,5 @@
 <?php
-    include('System/ClassesList.php');
+    require_once ('System/ClassesList.php');
     $Insp = new Inspector();
 
     $url = $_SERVER['REQUEST_URI'];
@@ -7,10 +7,10 @@
 
     if($Insp->IsClass($url) == true)
     {
-        implode ($url);
+        include ("Class/".$url.".php");
     }
     else
     {
-        implode ("404.php");
+        include ("404.php");
     }       
 ?>
